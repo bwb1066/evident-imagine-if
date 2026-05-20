@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucia — Autonomous campaign</title>
+  <link rel="icon" type="image/x-icon" href="https://evidentscientific.com/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mockup-stage">
+    <p class="mockup-caption"><strong>2B</strong> — Autonomous multi-day campaign. Priya's 72-hour live-cell time-lapse is running on the IXplore IX85. iPSC-derived cortical neurons differentiating under three pharmacological conditions. Lucia handles focus drift, environment alarms, and morning summary briefings. Priya checks in once a day — the rest happens autonomously.</p>
+    <div class="evident-mock">
+      <div class="ev-util">
+        <div class="left">
+          <span><strong>Riverbrook University · Department of Neuroscience</strong></span>
+          <span>Dr. Priya Raman · Postdoctoral Fellow</span>
+        </div>
+        <div class="right">
+          <span class="ai-pill">Lucia · TruAI · autonomous</span>
+          <a>Help</a><a>Sign out</a>
+        </div>
+      </div>
+      <div class="ev-nav">
+        <span class="ev-logo"><span class="mark"></span>EVIDENT</span>
+        <div class="ev-nav-items">
+          <a class="active">Acquisition</a><a>Library</a><a>Analysis</a><a>Protocols</a><a>Collaborate</a>
+        </div>
+      </div>
+
+      <div class="ev-hero">
+        <span class="lucia-pillar" style="background:rgba(0,184,217,0.2);color:var(--ev-cyan);">WORKFLOW LAYER · AUTONOMOUS</span>
+        <span class="lucia-tag on-dark">LUCIA · DAY 2 of 3 · 47:18:12 elapsed</span>
+        <h1>iPSC neuron differentiation · 72hr time-lapse · IXplore IX85</h1>
+        <p class="sub">3 conditions × 6 wells × 24 positions · phase contrast + GFP every 12 min · environment-controlled chamber · Priya's morning briefing below</p>
+      </div>
+
+      <div class="stat-bar">
+        <div class="stat-tile"><div class="num">432</div><div class="label">Positions imaged · all wells</div></div>
+        <div class="stat-tile"><div class="num">236 / 360</div><div class="label">Time points complete</div></div>
+        <div class="stat-tile cyan"><div class="num">8</div><div class="label">Auto-corrections last 24h</div></div>
+        <div class="stat-tile"><div class="num">100%</div><div class="label">Environment stability</div></div>
+      </div>
+
+      <div class="section-tight">
+        <h2>Lucia's morning briefing · 7:14 AM</h2>
+        <p class="lede" style="margin-bottom:0;font-size:12.5px;">Sent to Priya's inbox &amp; the lab Slack at 7am. Three minutes to read, everything you need to know about what happened overnight.</p>
+      </div>
+
+      <div class="section-tight" style="padding-top:8px;">
+        <div class="lucia-card">
+          <div class="lucia-tag">LUCIA — 24-hour summary · 7:14 AM</div>
+          <p style="margin-bottom:8px;"><strong>Overnight status: clean. No interventions needed from you.</strong></p>
+          <p style="margin-bottom:8px;"><strong>Differentiation progress (visual phenotype scores via TruAI):</strong></p>
+          <p style="margin-bottom:8px;padding-left:14px;border-left:2px solid var(--ev-cyan);">— <strong>Condition A (control):</strong> 64% of GFP+ cells now showing neurite outgrowth. On expected trajectory.<br>— <strong>Condition B (BDNF +):</strong> 78% neurite outgrowth — significantly ahead of control (p&lt;0.01, two-way ANOVA, conditions × time). Expected effect, looks beautiful.<br>— <strong>Condition C (kinase inhibitor):</strong> 41% — slower. Three positions showing unusual rounding morphology at 36h timepoint that wasn't in your last campaign. <strong>Flagged for your review.</strong></p>
+          <p style="margin-bottom:8px;"><strong>What I did autonomously:</strong> 4 focus corrections after media-change at hour 24 (well B3 drifted 8 µm down — autocorrected). 2 position shifts to keep ROIs centered as cells migrated. 1 LED intensity adjustment on the GFP channel after I noticed signal increased ~12% from photobleach reset.</p>
+          <p style="margin-bottom:0;"><strong>What I held back from acting on:</strong> Condition C, position C4, has a single field showing GFP signal loss starting hour 38. Could be a phototoxic effect (LED setting), could be biological (apoptosis cascade from the inhibitor). I didn't want to assume — please review.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Three positions Lucia flagged for your review</h2>
+        <div class="slide-grid">
+          <div class="slide-card">
+            <div class="slide-img if">
+              <span class="badge cyan" style="font-size:9px;">FLAGGED</span>
+            </div>
+            <div class="slide-body">
+              <div class="slide-title">C4 · phototoxicity?</div>
+              <div class="slide-meta">Condition C · hour 38 · GFP signal loss</div>
+              <p class="slide-finding">GFP signal in 14 of 22 tracked cells dropped 40-65% over a 6-hour window. Could be inhibitor-induced apoptosis (expected biology) or LED-induced phototoxicity (concerning). Lucia paused this single position pending your review.</p>
+              <a class="btn btn-outline" style="margin-top:10px;font-size:11px;">Review timepoint</a>
+            </div>
+          </div>
+          <div class="slide-card">
+            <div class="slide-img if">
+              <span class="badge amber" style="font-size:9px;">UNUSUAL</span>
+            </div>
+            <div class="slide-body">
+              <div class="slide-title">C2 · rounding morphology</div>
+              <div class="slide-meta">Condition C · hour 36 · 3 cells</div>
+              <p class="slide-finding">Three cells in C2 showed atypical rounding without GFP loss. Not in your last campaign with this inhibitor — could be batch-specific iPSC variation or a real new phenotype. Lucia kept imaging.</p>
+              <a class="btn btn-outline" style="margin-top:10px;font-size:11px;">Compare to last run</a>
+            </div>
+          </div>
+          <div class="slide-card">
+            <div class="slide-img if">
+              <span class="badge green" style="font-size:9px;">EXPECTED</span>
+            </div>
+            <div class="slide-body">
+              <div class="slide-title">B3 · accelerated differentiation</div>
+              <div class="slide-meta">Condition B · hour 30+ · 78% neurite</div>
+              <p class="slide-finding">BDNF condition outperforming expectation by ~14% on neurite outgrowth. Consistent with literature but at the upper end of your prior results. May be worth flagging for additional replicates before publication.</p>
+              <a class="btn btn-outline" style="margin-top:10px;font-size:11px;">See trajectory</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0;">
+        <h2>What Lucia is watching while you sleep</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="ord">1</div>
+            <h4>Focus stability</h4>
+            <p class="desc">Z-drift detection every 60 min. Refocuses if more than ±2 µm drift. Logs corrections to protocol audit trail.</p>
+          </div>
+          <div class="step">
+            <div class="ord">2</div>
+            <h4>Environment</h4>
+            <p class="desc">CO₂, O₂, temp, humidity, media level monitored continuously. Alarms by Slack/SMS if any parameter exceeds thresholds.</p>
+          </div>
+          <div class="step">
+            <div class="ord">3</div>
+            <h4>Anomalies</h4>
+            <p class="desc">TruAI compares each frame against the well's history. Surfaces phenotypes that don't match expected differentiation trajectory.</p>
+          </div>
+          <div class="step">
+            <div class="ord">4</div>
+            <h4>Optical health</h4>
+            <p class="desc">Continuously monitors LED degradation, illumination uniformity, condenser alignment. Reports if FV5000 service needs attention.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0;">
+        <div class="lucia-card">
+          <div class="lucia-tag">LUCIA — the autonomy story</div>
+          <p style="margin-bottom:0;">Pre-Lucia, Priya would have woken up twice during this campaign to refocus the IX85 manually, would have lost ~14 hours of data to drift, and would have caught the C4 phototoxicity question (if at all) at the end of the run instead of mid-flight. Three days of unattended live-cell imaging used to be aspirational. With Lucia handling the routine and surfacing only the calls a human should make, it's now Tuesday morning's pre-coffee routine.</p>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:22px;">
+          <a class="btn-cyan btn">Resume C4 position · I've reviewed</a>
+          <a class="btn-outline">Add replicate well for Condition B</a>
+          <a class="btn-ghost">Export 48h interim figures</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>

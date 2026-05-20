@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucia — Wafer inspection</title>
+  <link rel="icon" type="image/x-icon" href="https://evidentscientific.com/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mockup-stage">
+    <p class="mockup-caption"><strong>5A</strong> — Semiconductor wafer inspection. Marcus Bell opens his morning view at 6:42am. Cascade Memory Fab 4 ran nightly surface-profile inspection on 1,800 wafers across 12 LEXT OLS5500 stations. Lucia surfaced 14 anomalous wafers — ranked by failure-mode probability, mapped to the process stage where the anomaly likely originated. The day's intervention work, prioritized.</p>
+    <div class="evident-mock">
+      <div class="ev-util">
+        <div class="left">
+          <span><strong>Cascade Memory · Boise Fab 4</strong></span>
+          <span>Marcus Bell · Senior Process Engineer · 6:42 AM</span>
+        </div>
+        <div class="right">
+          <span class="ai-pill">Lucia · metrology active</span>
+          <a>Help</a><a>Sign out</a>
+        </div>
+      </div>
+      <div class="ev-nav">
+        <span class="ev-logo"><span class="mark"></span>EVIDENT</span>
+        <div class="ev-nav-items">
+          <a class="active">Inspection</a><a>Metrology</a><a>Excursion</a><a>Reports</a><a>Fleet</a>
+        </div>
+        <div class="ev-actions">
+          <input class="search" placeholder="Search lots, wafers…">
+        </div>
+      </div>
+
+      <div class="ev-hero">
+        <span class="lucia-pillar" style="background:rgba(0,184,217,0.2);color:var(--ev-cyan);">DECISION LAYER · INDUSTRIAL</span>
+        <span class="lucia-tag on-dark">LUCIA · OVERNIGHT BATCH COMPLETE · 06:42 AM</span>
+        <h1>Nightly inspection · 1,800 wafers · 14 anomalous</h1>
+        <p class="sub">12 LEXT OLS5500 stations · 23:14 last night through 06:08 this morning · Lucia surfaced 14 wafers needing engineer review · 3 high-priority, 11 routine</p>
+      </div>
+
+      <div class="stat-bar">
+        <div class="stat-tile"><div class="num">1,800</div><div class="label">Wafers profiled</div></div>
+        <div class="stat-tile"><div class="num">1,786</div><div class="label">Within spec</div></div>
+        <div class="stat-tile cyan"><div class="num">14</div><div class="label">Flagged for review</div></div>
+        <div class="stat-tile"><div class="num">3</div><div class="label">High-priority · &lt; 2 hr action</div></div>
+      </div>
+
+      <div class="section-tight">
+        <h2>Top 3 wafers · Lucia ranked by intervention value</h2>
+        <p class="lede" style="margin-bottom:0;font-size:12.5px;">Failure-mode probability × dollar exposure × process-stage upstream impact. Where Marcus should look first.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--border);">
+        <div style="padding:24px;border-right:1px solid var(--border);background:var(--ev-cyan-soft);">
+          <div style="display:flex;gap:12px;align-items:center;margin-bottom:14px;">
+            <span class="badge magenta" style="background:var(--ev-magenta);">PRIORITY 1</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-muted);">Lot 5A · wafer 0247</span>
+          </div>
+          <div class="wafer-map" style="max-width:280px;margin:0 auto 16px;">
+            <!-- Generating a wafer map with mostly green dies and some warns/flags -->
+            <div class="die empty"></div><div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div><div class="die empty"></div>
+            <div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die warn"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die warn"></div><div class="die fail"></div><div class="die flagged"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die warn"></div><div class="die fail"></div><div class="die flagged"></div><div class="die flagged"></div><div class="die flagged"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die warn"></div><div class="die fail"></div><div class="die flagged"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die warn"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div>
+            <div class="die empty"></div><div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div><div class="die empty"></div>
+          </div>
+          <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-bottom:14px;">
+            <span style="display:inline-block;width:10px;height:10px;background:rgba(31,158,74,0.4);vertical-align:middle;margin-right:4px;"></span> In-spec · 87
+            <span style="display:inline-block;width:10px;height:10px;background:var(--ev-amber);vertical-align:middle;margin-left:10px;margin-right:4px;"></span> Borderline · 8
+            <span style="display:inline-block;width:10px;height:10px;background:var(--ev-red);vertical-align:middle;margin-left:10px;margin-right:4px;"></span> Fail · 9
+            <span style="display:inline-block;width:10px;height:10px;background:var(--ev-cyan);vertical-align:middle;margin-left:10px;margin-right:4px;"></span> Lucia flagged · 5
+          </div>
+          <div style="font-size:13px;line-height:1.6;">
+            <strong>Center-cluster surface roughness excursion.</strong> 5 dies in a contiguous central region show Ra 2.4× spec. Pattern is characteristic of CMP polish-pad wear — likely originated at CMP-3 station. <strong>Failure mode: yield loss propagating to subsequent lots if not addressed within shift.</strong>
+          </div>
+        </div>
+
+        <div style="padding:24px;">
+          <div style="display:flex;gap:12px;align-items:center;margin-bottom:14px;">
+            <span class="badge magenta" style="background:var(--ev-magenta);">PRIORITY 2</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-muted);">Lot 7C · wafer 0118</span>
+          </div>
+          <div class="wafer-map" style="max-width:280px;margin:0 auto 16px;">
+            <div class="die empty"></div><div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div><div class="die empty"></div>
+            <div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div>
+            <div class="die"></div><div class="die"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die warn"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die fail"></div><div class="die flagged"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die warn"></div><div class="die fail"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die warn"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div>
+            <div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div>
+            <div class="die empty"></div><div class="die empty"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die"></div><div class="die empty"></div><div class="die empty"></div>
+          </div>
+          <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-bottom:14px;">
+            Edge defect pattern · 6 dies affected · left quadrant
+          </div>
+          <div style="font-size:13px;line-height:1.6;">
+            <strong>Localized edge defect.</strong> Lucia traced to a fixed location signature — likely chuck contamination or particle-deposit at coater. Single-lot impact, not propagating. <strong>Lower urgency than priority 1 but worth same-day action.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-tight">
+        <h2>All 14 flagged wafers · ranked</h2>
+      </div>
+
+      <div style="padding:0;">
+        <div class="alert-row flagged">
+          <div class="ico magenta">P1</div>
+          <div class="body">
+            <div class="title">Lot 5A wafer 0247 · center-cluster Ra excursion → CMP-3</div>
+            <div class="desc">5 dies, surface roughness 2.4× spec. Lucia traces to CMP polish-pad lot CP-2025-088 currently on CMP-3. <strong>$340K exposure if propagates one more shift.</strong></div>
+          </div>
+          <div class="affected">$340K<div class="sub">Avoided · act now</div></div>
+          <div><a class="btn-cyan btn">See excursion case →</a></div>
+        </div>
+        <div class="alert-row flagged">
+          <div class="ico magenta">P2</div>
+          <div class="body">
+            <div class="title">Lot 7C wafer 0118 · edge defect → coater</div>
+            <div class="desc">Particle pattern characteristic of chuck contamination at coater #2. Single-wafer impact in nightly sample, but worth coater cleaning before next batch.</div>
+          </div>
+          <div class="affected">~$8K<div class="sub">Per-lot risk</div></div>
+          <div><a class="btn-cyan btn">Schedule clean</a></div>
+        </div>
+        <div class="alert-row flagged">
+          <div class="ico magenta">P3</div>
+          <div class="body">
+            <div class="title">Lot 3B wafer 0089 · step-height anomaly → litho</div>
+            <div class="desc">Step height 14% above spec across 3 dies. Pattern suggests resist-thickness variation upstream. Lucia recommends litho recipe review.</div>
+          </div>
+          <div class="affected">~$22K<div class="sub">Per-lot risk</div></div>
+          <div><a class="btn-cyan btn">Open recipe</a></div>
+        </div>
+        <div class="alert-row">
+          <div class="ico amber">R</div>
+          <div class="body">
+            <div class="title">11 wafers · routine borderline-spec readings</div>
+            <div class="desc">Each within "marginal" band but no failure-mode signature. Logged for trend analysis. Lucia will flag if pattern emerges over next 5 batches.</div>
+          </div>
+          <div class="affected">Tracked<div class="sub">No action today</div></div>
+          <div><a class="btn-ghost">View all 11</a></div>
+        </div>
+        <div class="alert-row">
+          <div class="ico green">✓</div>
+          <div class="body">
+            <div class="title">1,786 wafers · in spec · no review needed</div>
+            <div class="desc">Full surface-profile maps logged to MES. Audit trail complete. Yield projection for the batch: 99.2% (vs 99.4% rolling average — minor dip driven by Lot 5A).</div>
+          </div>
+          <div class="affected">In spec<div class="sub">99.2% yield</div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="lucia-card">
+          <div class="lucia-tag">LUCIA — the morning math</div>
+          <p style="margin-bottom:0;">Pre-Lucia, Marcus's morning was: open SPC dashboards, eyeball control charts for 12 LEXT stations, scroll through ~200 wafer profile reports, miss the cross-station pattern (which wouldn't show up on any single chart) until someone called from CMP at 11am about scrap. With Lucia, the prioritized list is on his screen at 6:42am, the top finding is the one that matters most ($340K exposure), and the trace-back to the CMP polish pad is already done. He'll be in front of the CMP-3 station with the pad-lot ID in hand by 7:30.</p>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:22px;">
+          <a class="btn-cyan btn">Open Lot 5A excursion case · drill down</a>
+          <a class="btn-outline">Export priority queue to MES</a>
+          <a class="btn-ghost">View full batch report</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>

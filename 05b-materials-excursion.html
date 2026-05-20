@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucia — Materials excursion case</title>
+  <link rel="icon" type="image/x-icon" href="https://evidentscientific.com/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mockup-stage">
+    <p class="mockup-caption"><strong>5B</strong> — Materials excursion case. The deep-dive on Lot 5A from the previous screen. Lucia traced 4 wafers across overnight inspection to a specific CMP polish-pad lot. The excursion would have cost ~$340K if propagated one more shift. By 7:30am Marcus is at CMP-3; by 9:30am the bad pad-lot is recalled. The intervention story that pays for the LEXT fleet.</p>
+    <div class="evident-mock">
+      <div class="ev-util">
+        <div class="left">
+          <span><strong>Cascade Memory · Boise Fab 4</strong></span>
+          <span>Marcus Bell · Senior Process Engineer</span>
+        </div>
+        <div class="right">
+          <span class="ai-pill">Lucia · root-cause active</span>
+          <a>Help</a><a>Sign out</a>
+        </div>
+      </div>
+      <div class="ev-nav">
+        <span class="ev-logo"><span class="mark"></span>EVIDENT</span>
+        <div class="ev-nav-items">
+          <a>Inspection</a><a>Metrology</a><a class="active">Excursion</a><a>Reports</a><a>Fleet</a>
+        </div>
+      </div>
+
+      <div class="ev-hero">
+        <span class="lucia-pillar" style="background:rgba(0,184,217,0.2);color:var(--ev-cyan);">DECISION LAYER · INTERVENTION</span>
+        <span class="lucia-tag on-dark">LUCIA · EXCURSION CASE EX-26-1142 · CLOSED 09:34 AM</span>
+        <h1>CMP polish-pad lot CP-2025-088 → $340K avoided</h1>
+        <p class="sub">Detection 06:42 · root cause confirmed 07:18 · pad-lot recalled 09:30 · CMP-3 restored to nominal 09:34 · the morning that paid for the LEXT fleet</p>
+      </div>
+
+      <div class="stat-bar">
+        <div class="stat-tile"><div class="num">$340K</div><div class="label">Loss avoided · this shift</div></div>
+        <div class="stat-tile"><div class="num">2h 52m</div><div class="label">Detection to resolution</div></div>
+        <div class="stat-tile cyan"><div class="num">4 wafers</div><div class="label">Scrap accepted</div></div>
+        <div class="stat-tile"><div class="num">~196</div><div class="label">Wafers protected · same shift</div></div>
+      </div>
+
+      <div class="section-tight">
+        <h2>Root-cause timeline · Lucia ran the trace, Marcus made the calls</h2>
+      </div>
+
+      <div style="padding:0;">
+        <div class="alert-row flagged">
+          <div class="ico" style="background:var(--ev-cyan);color:var(--ev-teal-deep);font-size:11px;">06:42</div>
+          <div class="body">
+            <div class="title">Detection — Lucia surfaces Lot 5A on Marcus's morning view</div>
+            <div class="desc">5-die contiguous central-cluster Ra excursion on wafer 0247. Lucia's signature-match library flags pattern as "CMP polish-pad wear, mid-life," 91% confidence.</div>
+          </div>
+          <div class="affected">Triage<div class="sub">P1 priority</div></div>
+        </div>
+
+        <div class="alert-row">
+          <div class="ico" style="background:var(--ev-cyan);color:var(--ev-teal-deep);font-size:11px;">06:58</div>
+          <div class="body">
+            <div class="title">Cross-wafer pattern check — Lucia scans the full batch</div>
+            <div class="desc">Found 3 additional wafers (Lot 5A 0241, 0252, 0263) with same center-cluster signature, scanned at CMP-3 between 23:14 and 04:08. <strong>Pattern temporally clustered on CMP-3.</strong> All 4 wafers shared polish-pad lot CP-2025-088 (installed 22:08 last night).</div>
+          </div>
+          <div class="affected">4 wafers<div class="sub">Pattern locked</div></div>
+        </div>
+
+        <div class="alert-row">
+          <div class="ico" style="background:var(--ev-cyan);color:var(--ev-teal-deep);font-size:11px;">07:18</div>
+          <div class="body">
+            <div class="title">Marcus confirms at CMP-3 · pad inspection on DSX2000</div>
+            <div class="desc">Marcus pulled the pad sample from CMP-3 and imaged on the bench DSX2000. Surface morphology consistent with premature glazing — pad-lot supplier defect, not run-out wear. Two other pads from the same supplier lot are still in inventory.</div>
+          </div>
+          <div class="affected">Confirmed<div class="sub">Supplier defect</div></div>
+        </div>
+
+        <div class="alert-row">
+          <div class="ico amber" style="font-size:11px;">07:24</div>
+          <div class="body">
+            <div class="title">Risk projection · what would have happened</div>
+            <div class="desc">Lucia modeled the propagation: CMP-3 was scheduled to run ~196 additional wafers across Lots 5A, 5B, 5C, 8A before next scheduled pad change at 14:30. At observed defect rate, ~58 of those would have failed yield. <strong>Conservative dollar exposure: $340K.</strong> Pessimistic (entire pad-lot returns defective): $1.1M.</div>
+          </div>
+          <div class="affected">$340K<div class="sub">Conservative</div></div>
+        </div>
+
+        <div class="alert-row">
+          <div class="ico amber" style="font-size:11px;">07:42</div>
+          <div class="body">
+            <div class="title">Decision · pad swap + inventory quarantine</div>
+            <div class="desc">Marcus called the shift lead. Decision: swap CMP-3 pad immediately, quarantine the remaining 2 pads from lot CP-2025-088, hold the 4 affected wafers for scrap accept review. No upstream production hold needed.</div>
+          </div>
+          <div class="affected">Action<div class="sub">Plan locked</div></div>
+        </div>
+
+        <div class="alert-row">
+          <div class="ico green" style="font-size:11px;">08:50</div>
+          <div class="body">
+            <div class="title">Pad swap complete · CMP-3 qualification run</div>
+            <div class="desc">New pad (lot CP-2025-091) installed. Two qualification wafers run through CMP-3 and immediately profiled on LEXT station 4. Both within spec. Lucia confirmed nominal surface signature.</div>
+          </div>
+          <div class="affected">In spec<div class="sub">Qual confirmed</div></div>
+        </div>
+
+        <div class="alert-row">
+          <div class="ico green" style="font-size:11px;">09:30</div>
+          <div class="body">
+            <div class="title">Supplier RMA initiated · all CP-2025-088 inventory recalled</div>
+            <div class="desc">Lucia drafted the supplier RMA covering both the failed pad on CMP-3 and the 2 quarantined unopened pads. Material defect documentation auto-attached (DSX2000 images, LEXT signatures, batch traceability). Sent for Marcus's review.</div>
+          </div>
+          <div class="affected">RMA<div class="sub">Ready · approve</div></div>
+        </div>
+
+        <div class="alert-row">
+          <div class="ico green" style="font-size:11px;">09:34</div>
+          <div class="body">
+            <div class="title">Excursion case closed · CMP-3 production resumes</div>
+            <div class="desc">Lucia logged all metrology evidence and process actions to the MES + the supplier-quality module. Case CFR-21-1142 closed. Marcus moved on to the priority-2 coater finding.</div>
+          </div>
+          <div class="affected">Closed<div class="sub">2h 52m total</div></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>The financial math · how the case is worth $340K</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th class="num">Quantity</th>
+              <th class="num">Per-unit</th>
+              <th class="num">Subtotal</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wafers projected to be scrapped without intervention</td>
+              <td class="num">58</td>
+              <td class="num">$5,800</td>
+              <td class="num">$336K</td>
+              <td>Material + processing through CMP step</td>
+            </tr>
+            <tr>
+              <td>CMP-3 downtime saved (rework wouldn't catch this fast)</td>
+              <td class="num">~4 hrs</td>
+              <td class="num">$1,000</td>
+              <td class="num">$4K</td>
+              <td>Conservative — fully-burdened tool-hour</td>
+            </tr>
+            <tr>
+              <td>Yield-impact downstream cascade</td>
+              <td colspan="2" class="num">Not modeled — out of scope this shift</td>
+              <td class="num">—</td>
+              <td>Real but not claimed; intentionally conservative</td>
+            </tr>
+            <tr class="subtotal">
+              <td><strong>Loss avoided — conservative</strong></td>
+              <td colspan="2"></td>
+              <td class="num"><strong>$340K</strong></td>
+              <td><strong>Verifiable in MES audit</strong></td>
+            </tr>
+            <tr>
+              <td>Wafers accepted as scrap (4 affected wafers)</td>
+              <td class="num">4</td>
+              <td class="num">$5,800</td>
+              <td class="num neg">−$23K</td>
+              <td>Real loss · price of catching it before it propagated</td>
+            </tr>
+            <tr class="total">
+              <td><strong>Net value of this intervention</strong></td>
+              <td colspan="2"></td>
+              <td class="num"><strong>+$317K</strong></td>
+              <td><strong>Single-shift, single-station, this morning</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section" style="padding-top:0;">
+        <div class="lucia-card">
+          <div class="lucia-tag">LUCIA — what made this catch possible</div>
+          <p style="margin-bottom:8px;"><strong>Three things had to work together.</strong> First, LEXT OLS5500 profiled every wafer overnight at production cadence — without that, the surface-roughness pattern simply isn't visible until end-of-line electrical test 3 weeks later. Second, Lucia's signature library recognized the CMP-polish-pad-wear pattern from prior excursions (we've trained on 4 years of Cascade Memory excursion history). Third, Lucia cross-correlated the 4 wafers against pad-lot traceability in the MES — that's the step a human eye misses because it's a join across three different data systems.</p>
+          <p style="margin-bottom:0;"><strong>The conservative dollar number is the right number.</strong> We're not counting downstream yield cascade — there are second-order effects (additional wafers from later lots, customer commitments) that Lucia could model but won't claim without confirmation. $317K net, this morning, audit-defensible. The supplier-quality team has a clean RMA case. Marcus is back on his planned day by 9:34am with a coffee instead of a fire drill.</p>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:24px;">
+          <a class="btn-cyan btn">Approve supplier RMA · CP-2025-088</a>
+          <a class="btn-outline">Send case summary to fab leadership</a>
+          <a class="btn-ghost">Add signature to Lucia's library</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>

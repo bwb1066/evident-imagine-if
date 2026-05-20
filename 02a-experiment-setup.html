@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucia — Experiment setup</title>
+  <link rel="icon" type="image/x-icon" href="https://evidentscientific.com/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mockup-stage">
+    <p class="mockup-caption"><strong>2A</strong> — Experiment setup. Priya is starting a new experiment series — three-month campaign comparing GCaMP6f vs jGCaMP8s in the same SST-Cre line. Lucia walks her through optimal acquisition parameters, explains the tradeoffs, drafts the protocol she'll re-run dozens of times. The expert post-doc looking over her shoulder, on demand.</p>
+    <div class="evident-mock">
+      <div class="ev-util">
+        <div class="left">
+          <span><strong>Riverbrook University · Department of Neuroscience</strong></span>
+          <span>Dr. Priya Raman · Postdoctoral Fellow</span>
+        </div>
+        <div class="right">
+          <span class="ai-pill">Lucia · TruAI active</span>
+          <a>Help</a><a>Sign out</a>
+        </div>
+      </div>
+      <div class="ev-nav">
+        <span class="ev-logo"><span class="mark"></span>EVIDENT</span>
+        <div class="ev-nav-items">
+          <a>Acquisition</a><a>Library</a><a>Analysis</a><a class="active">Protocols</a><a>Collaborate</a>
+        </div>
+      </div>
+
+      <div class="ev-hero">
+        <span class="lucia-pillar" style="background:rgba(0,184,217,0.2);color:var(--ev-cyan);">WORKFLOW LAYER</span>
+        <span class="lucia-tag on-dark">LUCIA · NEW PROTOCOL DRAFT</span>
+        <h1>Protocol: GCaMP6f vs jGCaMP8s — comparative dynamics</h1>
+        <p class="sub">New three-month campaign · ~80 slices projected · same FV5000 rig, same SST-Cre line, paired indicators · Lucia drafted parameters, awaiting Priya's review</p>
+      </div>
+
+      <div class="stat-bar">
+        <div class="stat-tile"><div class="num">~80</div><div class="label">Slices projected</div></div>
+        <div class="stat-tile"><div class="num">~240 hrs</div><div class="label">Total scope time</div></div>
+        <div class="stat-tile cyan"><div class="num">14</div><div class="label">Lucia-flagged tradeoffs</div></div>
+        <div class="stat-tile"><div class="num">v0.3</div><div class="label">Protocol draft · review</div></div>
+      </div>
+
+      <div class="section-tight">
+        <div class="lucia-card" style="margin-bottom:18px;">
+          <div class="lucia-tag">LUCIA — what I optimized for</div>
+          <p style="margin-bottom:8px;"><strong>Your stated goal:</strong> compare signal dynamics between GCaMP6f and the faster jGCaMP8s in the same SST+ population. The key tradeoff is photobleach vs SNR — jGCaMP8s is dimmer at rest, so you'll want enough laser power to resolve baseline cleanly, but not so much that you photobleach the GCaMP6f comparison slices over the multi-week campaign.</p>
+          <p style="margin-bottom:0;"><strong>What I drafted:</strong> a single protocol that works for both indicators with one calibration step per session. Photobleach budget calculated against your historical FV5000 use. Speed set to capture the 8s indicator's faster off-kinetics. Three preset variants for different slice depths.</p>
+        </div>
+      </div>
+
+      <div class="section-tight" style="padding-top:0;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th style="width:24%;">Parameter</th>
+              <th>Lucia's draft</th>
+              <th>Why</th>
+              <th>You'd typically use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Laser source</strong></td>
+              <td>InSight X3+ · 920 nm</td>
+              <td>Two-photon · ideal for both GCaMP variants</td>
+              <td>Same — no change</td>
+            </tr>
+            <tr class="flagged">
+              <td><strong>Laser power at sample</strong></td>
+              <td>10 mW (GCaMP6f) · 14 mW (jGCaMP8s)</td>
+              <td>jGCaMP8s requires +40% to match SNR at rest — calculated from your prior recordings</td>
+              <td>You typically use 12 mW flat — I'd recommend the split</td>
+            </tr>
+            <tr>
+              <td><strong>Scan mode</strong></td>
+              <td>Resonance galvano · bidirectional</td>
+              <td>30 Hz at 256×256 captures jGCaMP8s rise/decay cleanly</td>
+              <td>Same — no change</td>
+            </tr>
+            <tr>
+              <td><strong>Frame size</strong></td>
+              <td>256 × 256 px</td>
+              <td>Sufficient sampling at 60× obj · faster than 512×512</td>
+              <td>Same</td>
+            </tr>
+            <tr>
+              <td><strong>Frame rate</strong></td>
+              <td>30 Hz</td>
+              <td>Aliased Nyquist for jGCaMP8s τ_off ~90ms; comfortable for GCaMP6f</td>
+              <td>You typically use 15 Hz — I'd recommend 30 to capture 8s</td>
+            </tr>
+            <tr>
+              <td><strong>Pixel dwell</strong></td>
+              <td>0.42 µs</td>
+              <td>Resonance-default · balances signal vs photobleach</td>
+              <td>Same</td>
+            </tr>
+            <tr>
+              <td><strong>Channel 1 · GCaMP</strong></td>
+              <td>GaAsP HSD · 495–540 nm</td>
+              <td>Highest QE for green emission</td>
+              <td>Same</td>
+            </tr>
+            <tr>
+              <td><strong>Channel 2 · tdTomato</strong></td>
+              <td>GaAsP HSD · 575–630 nm</td>
+              <td>Cre marker · low duty cycle, brief 1040nm pulse every 60s</td>
+              <td>You usually leave Ch2 always-on — I'd flash it instead to save photobleach</td>
+            </tr>
+            <tr>
+              <td><strong>Z-stack</strong></td>
+              <td>Disabled · single plane</td>
+              <td>Physiology priority · 1 µm plane sufficient for cell-body imaging</td>
+              <td>Same</td>
+            </tr>
+            <tr>
+              <td><strong>Acquisition duration</strong></td>
+              <td>180 s baseline + stim epochs</td>
+              <td>Matches your published protocol from 2024 — peer-reviewed precedent</td>
+              <td>Same</td>
+            </tr>
+            <tr>
+              <td><strong>Pre-acquisition calibration</strong></td>
+              <td>Daily PSF check + autofluor reference slice</td>
+              <td>Multi-week comparability — drift across the FV5000 over 3 months</td>
+              <td>You typically skip this — I'd add it for the campaign</td>
+            </tr>
+            <tr>
+              <td><strong>TruAI segmentation</strong></td>
+              <td>SST-pyramidal model · v2.3</td>
+              <td>Your existing model for this line · 0.94 IoU on validation</td>
+              <td>Same — no change</td>
+            </tr>
+            <tr>
+              <td><strong>ΔF/F event detection</strong></td>
+              <td>Threshold 3σ · min duration 60 ms</td>
+              <td>Captures jGCaMP8s fast events without GCaMP6f noise floor</td>
+              <td>You use 2σ — I'd raise it for the faster indicator</td>
+            </tr>
+            <tr class="flagged">
+              <td><strong>Photobleach budget</strong></td>
+              <td>~30 min continuous per slice</td>
+              <td>Sets a hard limit Lucia enforces — auto-pauses at 90%</td>
+              <td>You typically don't track — I'd recommend adding</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>What this protocol gives you</h2>
+        <div class="model-grid" style="padding:0;">
+          <div class="model-tile">
+            <div class="model-eyebrow">CAPABILITY 1</div>
+            <div class="model-name">Apples-to-apples indicator comparison</div>
+            <p class="alloc">Same SST+ cells, same rig, same scan parameters except where the biology demands difference — laser power and event threshold. Reviewer-defensible.</p>
+          </div>
+          <div class="model-tile">
+            <div class="model-eyebrow">CAPABILITY 2</div>
+            <div class="model-name">Cross-week drift control</div>
+            <p class="alloc">Daily PSF + autofluor reference catches scope drift over the 3-month campaign before it contaminates your between-indicator comparison.</p>
+          </div>
+          <div class="model-tile">
+            <div class="model-eyebrow">CAPABILITY 3</div>
+            <div class="model-name">Replication-ready protocol export</div>
+            <p class="alloc">Export to Nature Methods Reporting Summary template — every parameter Lucia drafted maps to a required field. Lab members and collaborators can re-run with one file.</p>
+          </div>
+        </div>
+
+        <div class="lucia-card" style="margin-top:22px;">
+          <div class="lucia-tag">LUCIA — three calls I'd want you to make before we save this</div>
+          <p style="margin-bottom:8px;"><strong>Stimulation epochs (line 11).</strong> Your stim protocol from 2024 used 4 epochs of paired light + sound. I kept those defaults but jGCaMP8s decays faster — you might want a longer inter-epoch interval (currently 8s, suggesting 12s) to ensure baseline return. Your call.</p>
+          <p style="margin-bottom:8px;"><strong>Calibration overhead (line 14).</strong> I added 12 minutes/session for PSF + autofluor. Across 80 slices that's ~16 hours of total scope time. Worth it for between-week comparability, but it does slow you down. If you'd rather skip and rely on post-hoc normalization, I can re-draft.</p>
+          <p style="margin-bottom:0;"><strong>Photobleach hard limit (line 16).</strong> 30 min/slice is conservative for both indicators. If you sometimes go over for particularly interesting slices, I can make it a soft limit (Lucia warns, doesn't pause) instead.</p>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:24px;">
+          <a class="btn">Save as protocol v1.0 · activate for tomorrow's session</a>
+          <a class="btn-outline">Adjust parameters</a>
+          <a class="btn-ghost">Discard</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucia — Clinical case report</title>
+  <link rel="icon" type="image/x-icon" href="https://evidentscientific.com/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mockup-stage">
+    <p class="mockup-caption"><strong>3B</strong> — Clinical case report. Dr. James Okafor on his Tuesday afternoon worklist. Complex breast core biopsy, multifocal, autonomously scanned on the SLIDEVIEW VS200 with Pramana real-time AI overnight. Lucia + Pramana surface the regions of interest, draft the case report structure, maintain CAP-compliant provenance and slide chain-of-custody throughout.</p>
+    <div class="evident-mock">
+      <div class="ev-util">
+        <div class="left">
+          <span><strong>Memorial Health Partners · Pathology</strong></span>
+          <span>Dr. James Okafor, MD · Attending Pathologist · CAP-accredited lab</span>
+        </div>
+        <div class="right">
+          <span class="ai-pill">Lucia · Pramana scan complete</span>
+          <a>Help</a><a>Sign out</a>
+        </div>
+      </div>
+      <div class="ev-nav">
+        <span class="ev-logo"><span class="mark"></span>EVIDENT</span>
+        <div class="ev-nav-items">
+          <a>Worklist</a><a class="active">Cases</a><a>Slides</a><a>Reports</a><a>Consult</a>
+        </div>
+        <div class="ev-actions">
+          <input class="search" placeholder="Search cases…" value="MHP-2026-04471">
+        </div>
+      </div>
+
+      <div class="ev-hero">
+        <span class="lucia-pillar" style="background:rgba(0,184,217,0.2);color:var(--ev-cyan);">WORKFLOW LAYER · CLINICAL</span>
+        <span class="lucia-tag on-dark">LUCIA + PRAMANA · CASE READY · DAY 1</span>
+        <h1>Case MHP-2026-04471 · breast core biopsy · multifocal</h1>
+        <p class="sub">Patient 67F · right breast UOQ + LOQ · 4 cores, multifocal · received yesterday 14:08 · Pramana autonomous scan complete 22:14 · Lucia ready for your read</p>
+      </div>
+
+      <div class="stat-bar">
+        <div class="stat-tile"><div class="num">4</div><div class="label">Slides · H&amp;E + IHC</div></div>
+        <div class="stat-tile"><div class="num">14</div><div class="label">ROIs Lucia flagged</div></div>
+        <div class="stat-tile cyan"><div class="num">3 of 14</div><div class="label">High-confidence malignant</div></div>
+        <div class="stat-tile"><div class="num">22 min</div><div class="label">Estimated read time · ↓ from 90</div></div>
+      </div>
+
+      <div class="section-tight">
+        <h2>Slides — autonomously scanned overnight</h2>
+        <p class="lede" style="margin-bottom:0;font-size:12.5px;">Pramana scanned all four slides yesterday between 22:14 and 22:51. Lucia ran TruAI tissue-type segmentation and tumor-region detection on each, surfacing high-confidence ROIs for your prioritized read.</p>
+      </div>
+
+      <div class="slide-grid">
+        <div class="slide-card">
+          <div class="slide-img he">
+            <span class="badge magenta" style="font-size:9px;background:var(--ev-magenta);">MALIGNANT</span>
+          </div>
+          <div class="slide-body">
+            <div class="slide-title">Slide 1 · H&amp;E · core A (UOQ)</div>
+            <div class="slide-meta">3.4 cm core · 18,440 × 24,200 px · 40× scan</div>
+            <p class="slide-finding">Lucia identified <strong>invasive ductal carcinoma</strong> in 2 of 7 tissue regions. Largest focus: 4.2 mm. Architectural grade 2/3. <strong>Confidence: 96%.</strong></p>
+          </div>
+        </div>
+        <div class="slide-card">
+          <div class="slide-img he">
+            <span class="badge amber" style="font-size:9px;">REVIEW</span>
+          </div>
+          <div class="slide-body">
+            <div class="slide-title">Slide 2 · H&amp;E · core B (UOQ)</div>
+            <div class="slide-meta">3.1 cm core · 17,200 × 23,800 px · 40× scan</div>
+            <p class="slide-finding">Atypical ductal hyperplasia with a focus suspicious for DCIS, low grade. Lucia surfaced 3 ROIs. <strong>Confidence: 72%</strong> — wants your eyes.</p>
+          </div>
+        </div>
+        <div class="slide-card">
+          <div class="slide-img he">
+            <span class="badge" style="font-size:9px;">BENIGN</span>
+          </div>
+          <div class="slide-body">
+            <div class="slide-title">Slide 3 · H&amp;E · core C (LOQ)</div>
+            <div class="slide-meta">2.8 cm core · 14,800 × 22,400 px · 40× scan</div>
+            <p class="slide-finding">Fibrocystic changes with apocrine metaplasia. No atypia identified. Lucia surfaced one focus of usual ductal hyperplasia for confirmation.</p>
+          </div>
+        </div>
+        <div class="slide-card">
+          <div class="slide-img if">
+            <span class="badge cyan" style="font-size:9px;background:var(--ev-cyan);">IHC PANEL</span>
+          </div>
+          <div class="slide-body">
+            <div class="slide-title">Slide 4 · IHC · ER/PR/HER2/Ki-67</div>
+            <div class="slide-meta">From core A (UOQ malignant focus)</div>
+            <p class="slide-finding">Lucia quantified: <strong>ER 95% (3+)</strong>, <strong>PR 80% (3+)</strong>, <strong>HER2 1+ (negative)</strong>, <strong>Ki-67 18%</strong>. Hormone receptor positive, HER2 negative profile.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Case report draft · Lucia structured, you write</h2>
+        <div class="methods-block">
+          <h4>Specimen</h4>
+          <p>Right breast core needle biopsy, multifocal lesions, two sites (upper outer quadrant + lower outer quadrant). Four cores received in formalin. Specimen integrity: adequate. Chain of custody: complete (intake at 14:08 yesterday; gross at 15:22; processing on Leica ASP6025 overnight cycle; H&amp;E + IHC cut and stained at 06:30 today).</p>
+          <h4>Microscopic findings · core A (UOQ)</h4>
+          <p>Sections show breast tissue containing two foci of <strong>invasive ductal carcinoma</strong> (largest 4.2 mm, smaller 1.8 mm). The carcinoma displays an infiltrative growth pattern with moderate nuclear pleomorphism, occasional mitotic figures (5/10 HPF), and tubule formation in approximately 20% of the tumor. <em>[Lucia drafted from TruAI architectural grading — please verify nuclear grade visually.]</em></p>
+          <h4>Microscopic findings · core B (UOQ)</h4>
+          <p>Sections show breast tissue with atypical ductal hyperplasia. There is one focus measuring 0.3 mm where the architecture is suspicious for low-grade ductal carcinoma in situ; however, the lesion does not meet full size criteria for definitive DCIS classification per WHO 2024. <em>[Lucia flagged this region at 72% confidence — manual confirmation needed.]</em></p>
+          <h4>Microscopic findings · core C (LOQ)</h4>
+          <p>Sections show breast tissue with fibrocystic changes including apocrine metaplasia and one focus of usual ductal hyperplasia. No atypia.</p>
+          <h4>Ancillary studies · IHC (core A malignant focus)</h4>
+          <p><strong>ER: positive, 95% nuclear staining, intensity 3+ (Allred score 8/8).</strong> <strong>PR: positive, 80% nuclear staining, intensity 3+ (Allred score 7/8).</strong> <strong>HER2: 1+ (negative) by IHC.</strong> <strong>Ki-67 proliferation index: 18%.</strong> Profile consistent with hormone receptor–positive, HER2-negative invasive ductal carcinoma.</p>
+          <h4>Synoptic summary <em>[CAP cancer protocol template populated]</em></h4>
+          <p>Histologic type: Invasive ductal carcinoma, NST · Histologic grade: 2/3 (Nottingham, draft) · Tumor size: 4.2 mm (largest invasive focus) · Margins: not applicable (core biopsy) · Lymphovascular invasion: not identified in cores · ER: positive (95%) · PR: positive (80%) · HER2: negative (1+) · Ki-67: 18%.</p>
+          <p class="citation">[Lucia note: report is structured per CAP Breast Biopsy Reporting Template v4.5.0.0. All AI-generated content is flagged in italics. Final diagnosis text is yours.]</p>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0;">
+        <div class="lucia-card">
+          <div class="lucia-tag">LUCIA — what's compliant, what needs your sign-off</div>
+          <p style="margin-bottom:8px;"><strong>Compliant by default:</strong> slide provenance, chain-of-custody, instrument metadata (VS200 scan parameters, Pramana model version, all overnight QC logs), and IHC quantification audit trail. Everything traces back to specimen intake. CAP and FDA-clearance documentation auto-attaches when the case is signed out.</p>
+          <p style="margin-bottom:8px;"><strong>Needs your sign-off before release:</strong> nuclear grade on core A (visual call — I drafted from architectural features only), the ADH-vs-DCIS line on core B (the 72% confidence isn't enough for definitive classification), and the final diagnosis text itself. The synoptic summary is populated but unsigned.</p>
+          <p style="margin-bottom:0;"><strong>What I recommend before sign-out:</strong> the core B focus is ambiguous enough that I'd suggest a second opinion. We have Dr. Sarah Lieberman (breast subspecialty, MSK) on the consult roster — I can prep the case for her in 4 minutes. Your call.</p>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:24px;">
+          <a class="btn-cyan btn">Send core B to Dr. Lieberman for second opinion</a>
+          <a class="btn">Sign out case · all foci confirmed</a>
+          <a class="btn-ghost">Recut additional levels</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>
